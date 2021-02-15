@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8" lang="pl/PL" />
+		<link rel="stylesheet" href="main.css" />
+		<script src="main.js"></script>
+	</head>
+	<body>
+	<div id="jsalert2"></div>
+	<div id="jsalertShadow2"></div>
+	
+	<div id="jsalert"></div>
+	<div id="jsalertShadow"></div>
+	
+	<div id="foodalert" style="margin-left:150px;font-size:12px;" class="alert"><b>JEDZENIE</div>
+	<div id="moneyalert" style="margin-left:380px;margin-top:-20px;font-size:12px;" class="alert">PIENIĄDZE</div>
+	<div id="overgrowthalert" style="margin-left:610px;margin-top:-20px;font-size:12px;" class="alert">PRZELUDN</b></div>
+	
+	<div id="mainBox" style="font-size:14px;right:0;left:0px;margin:auto;position:absolute;z-index:2;">
+		<div id="playgroundAction">
+			<div id="playgroundStats" style="margin-top:50px;margin-left:50px;">
+				<div class="statLine" style="width:98%;">Poziom:<div id="minelvl" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Przychód poziom + : <div id="nextinc" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Ilość pracowników :<div id="minesls" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Koszt ulepszenia :<div id="minelvlup" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;"><button id="button-up" onclick="lvlUP(1)">Ulepsz</button></div>
+			</div>
+			
+			<div id="playgroundStats" style="float:right;margin-top:80px;margin-right:1px;">
+				<div class="statLine" style="width:98%;">Poziom: <div id="citylvl" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Ludn. poziom + : <div id="nextpop" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Ludn. maksymalna :<div id="maxpop" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Koszt ulepszenia : <div id="citylvlup" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;"><button id="button-up" onclick="lvlUP(2)">Ulepsz</button></div>
+			</div>
+				
+			<div id="playgroundStats" style="margin-top:150px;margin-left:10px;">
+				<div class="statLine" style="width:98%;">Poziom: <div id="fieldslvl" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Przychód poziom + : <div id="nextfinc" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Ilość pracowników : <div id="fieldssls" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;">Koszt ulepszenia : <div id="fieldslvlup" class="txt" style="float:right;"></div></div>
+				<div class="statLine" style="width:98%;"><button id="button-up" onclick="lvlUP(3)">Ulepsz</button></div>
+			</div>
+		</div>
+		
+		<div style="font-size:17px;margin-top:-260px;" id="statsOutput">
+			<div class="statLine"> % pracujący w kopalni : <input type="text" id="mineprc" class="txt" /></div>
+			<div class="statLine"> % pracujący na polach : <input type="text" id="fieldsprc" class="txt" /></div>
+			<div class="statLine"> % broniący miasta : <input type="text" id="cityprc" class="txt" /></div>
+			<div id="colony"> </div>
+		</div>	
+				<div id="cityFullnessContainer">
+					<div id="cityFullnessBar"></div>
+				</div>
+		
+		<div style="width:121px;height:30px;margin-left:804px;margin-top:-100px;"><button id="button" onclick="aaa();">Koniec tury</button></div>
+	</div>
+	
+	
+	
+	<div id="mainBox">
+		<div id="playGround">
+			<div id="mine">
+				
+			</div>
+	
+			
+			<div id="city">
+			
+			</div>
+			
+			
+			<div id="fields">
+			
+			</div>
+		</div>
+
+		<div style="font-size:20px;" id="statsOutput">
+			<div class="statLine"> Punkty : <div id="point" style="width:100px" class="txt"></div></div>
+			<div class="statLine"> Runda : <div id="round" style="width:100px" class="txt"></div></div>
+			<div class="statLine"> Ilość rodzin : <div id="popul" style="width:100px" class="txt"></div></div>
+			<div class="statLine"></div>
+			<div class="statLine"> Spichlerz : <div id="grana" style="width:100px" class="txt"></div></div>			
+			<div class="statLine"> Zbiory : <div id="finco" style="width:100px" class="txt"></div></div>		
+			<div class="statLine"> Wyżywienie : <div id="feeds" style="width:100px" class="txt"></div></div>
+			<div class="statLine"></div>
+			<div class="statLine"> Skarbiec : <div id="treas" style="width:100px" class="txt"></div></div>
+			<div class="statLine"> Przychód : <div id="incom" style="width:100px" class="txt"></div></div>
+			<div class="statLine"> Rozchód : <div id="outco" style="width:100px" class="txt"></div></div>
+			<div class="statLine"></div>
+		</div>
+	</div>
+	</body>
+</html>
+
+<script>
+writeAll();
+	function aaa()
+	{
+		main();
+	}
+	function bbb()
+	{
+		colony();
+	}
+</script>

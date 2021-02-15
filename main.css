@@ -1,0 +1,279 @@
+body
+{
+	font-family:arial;
+}
+
+.alert
+{
+	width:80px;
+	height:20px;
+	background-color:green;
+	margin-top:20px;
+	text-align:center;
+}
+
+#playGround
+{
+	width:700px;
+	height:600px;
+	background-color:green;
+	float:left;
+	border-right: 4px solid white;
+	border-left: 4px solid black;
+	border-top: 4px solid black;
+	border-bottom: 4px solid white;
+}
+
+#statsOutput
+{
+	width:270px;
+	float:right;
+	background-color:#CDB555;
+	margin-top:20px;
+}
+
+#mainBox
+{
+	width:1000px;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+body 
+{
+	background-color:#CDB555;
+}
+
+#mine
+{
+	width:150px;
+	height:150px;
+	margin-top:70px;
+	margin-left:250px;
+	background-image:url("mine.png");
+}
+
+#city
+{
+	width:300px;
+	height:250px;
+	margin-top:110px;
+	margin-right:20px;
+	background-image:url("city.png");
+	float:right;
+}
+
+#fields
+{
+	width:300px;
+	height:200px;
+	margin-top:160px;
+	margin-left:20px;
+	background-image:url("fields.png");
+}
+
+.txt
+{
+	height:20px;
+	width:70px;
+	background-color:gray;
+	font-family:arial;
+	font-size:18px;
+	text-align: center;
+	border-right: 4px solid white;
+	border-left: 4px solid black;
+	border-top: 4px solid black;
+	border-bottom: 4px solid white;	
+	float:right;
+}
+
+.statLine
+{
+	width:100%;
+	height:30px;
+}
+
+#button
+{
+	border-right: 4px solid black;
+	border-left: 4px solid white;
+	border-top: 4px solid white;
+	border-bottom: 4px solid black;
+	width:100%;
+	height:30px;
+	background-color:gray;
+	color:black;
+	font-family:arial;
+	font-size:18px;
+}
+
+#button-up
+{
+	border-right: 4px solid black;
+	border-left: 4px solid white;
+	border-top: 4px solid white;
+	border-bottom: 4px solid black;
+	width:108px;
+	height:30px;
+	background-color:gray;
+	color:black;
+	font-family:arial;
+	font-size:18px;
+	margin-left:46px;
+}
+
+#button:hover
+{
+	background-color:red;
+}
+
+#button:active
+{
+	border:none;
+}
+
+#jsalert
+{
+	left: 0px;
+	top:0px;
+	position:absolute;
+	z-index: 4;
+}
+
+#jsalertShadow
+{
+	position:absolute;
+	z-index:3;
+	left: 0px;
+	top:50px;
+}
+
+#jsalert2
+{
+	left: 0px;
+	top:0px;
+	position:absolute;
+	z-index: 7;
+}
+
+#jsalertShadow2
+{
+	position:absolute;
+	z-index:6;
+	left: 0px;
+	top:50px;
+}
+
+#alertBox
+{
+	margin-top:150px;
+	margin-left:200px;
+	width:500px;
+	height:200px;
+	background-color:#dddddd;
+	border-right: 4px solid black;
+	border-left: 4px solid white;
+	border-top: 4px solid white;
+	border-bottom: 4px solid black;
+}
+
+#alertBoxControls
+{
+	width:100%;
+	height:30px;
+	background-color:#999999;
+}
+
+#alertBoxClose
+{
+	
+	border-left: 4px solid white;
+	border-bottom: 4px solid black;
+	height:30px;
+	width:40px;
+	float:right;
+}
+
+#alertBoxContent
+{
+	width:350px;
+	height:100px;
+	margin-left:75px;
+	margin-top:20px;
+}
+
+#alertBoxShadow
+{
+	height:200px;
+	width:500px;
+	margin-top:130px;
+	margin-left:230px;
+	background-color:black;
+	opacity:0.7;
+}
+
+#alertBoxOk
+{
+	width:150px;
+	height:30px;
+	margin-left:175px;
+	border-right: 4px solid black;
+	border-left: 4px solid white;
+	border-top: 4px solid white;
+	border-bottom: 4px solid black;
+}
+
+#playgroundStats
+{
+	width:220px;
+	height:90px;
+}
+
+#cityFullnessContainer
+{
+	width:200px;
+	height:32px;
+	background-color:gray;
+	margin-left:440px;
+	margin-top:-60px;
+}
+
+#cityFullnessBar
+{
+	height:30px;
+	background-color:lightblue;
+}
+
+#playgroundAction
+{
+	z-index:2;
+	width:708px;
+	height:608px;
+}
+
+#colony
+{
+	width:45%;
+	margin:0 auto;
+	margin-top:5px;
+}
+
+@keyframes a1
+{
+	0%{background-color:red;}
+	50%{background-color:red;}
+	51%{background-color:white;}
+	100%{background-color:white;}
+}
+
+@keyframes a2
+{
+	0%{background-color:red;}
+	100%{background-color:gray;}
+}
+
+@keyframes a3
+{
+	0%{background-color:gray;}
+	100%{background-color:gray;}
+}
